@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+</head>
+<body>
+<h1>Results</h1>
+<div style="padding:10px">
+
+    {% if prediction == [0]%}
+    <h2 class="fake">This article is {%print(percentage)%} fake</h2>
+
+    {% elif prediction == [1]%}
+    <h2 class="real"><b>This article is {%print(percentage)%} real</b></h2>
+
+    {% endif %}
+        <h2>Similar Articles</h2>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 40%;">Url</th>
+                <th style="width: 30%;">Article</th>
+                <th style="width: 30%;">Similarity</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for index, row in similarity_table.iterrows() %}
+            <tr>
+                <td>{{ row['url'] }}</td>
+                <td>{{ row['article'] }}</td>
+                <td>{{ row['similarity'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h3 style="text-align: center"> sentiment intensity: {%print(sentiment_intensity)%}</h3>
+    <h3 style="text-align: center"> misspelled words: {%print(misspelled_count)%}</h3>
+    <h3 style="text-align: center"> offensive words: {%print(offensive_count)%}</h3>
+
+</div>
+</body>
+</html>

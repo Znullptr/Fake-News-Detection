@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color : #B8E9F3;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    background-repeat: repeat;
+    color: black;
+    width: 80%;
+    height:120%;
+    border-radius: 10px;
+    padding: 30px 30px;
+    box-shadow: 0 0 20px 0 skyblue;
+    border: 1px solid skyblue;
+}
+
+.title-container{
+    display: flex;
+    height: 100vh;
+    padding: 5px;
+    align-items: center;
+}
+.title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.article-title{
+    border: 2px solid cyan;
+    margin: 1rem;
+    color: black;
+    width: 90%;
+    background: transparent;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    outline: none;
+}
+.article-text {
+    border: 2px solid cyan;
+    margin: 1rem;
+    color: black;
+    background: transparent;
+    border-radius: 10px;
+    padding: 2rem 2rem;
+    width: 90%;
+    height: 130%;
+    font-size: 1.2rem;
+    outline: none;
+}
+.article-title:focus {
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.article-text:focus {
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes colorChange {
+    0% {
+        border-color: green;
+    }
+    10% {
+        border-color: yellow;
+    }
+    20% {
+        border-color: hotpink;
+    }
+    30% {
+        border-color: red;
+    }
+    40% {
+        border-color: purple;
+    }
+    50% {
+        border-color: yellow;
+    }
+    60% {
+        border-color: cyan;
+    }
+    70% {
+        border-color: skyblue;
+    }
+    80% {
+        border-color: pink;
+    }
+    90% {
+        border-color: red;
+    }
+    100% {
+        border-color: yellow;
+    }
+}
+
+.predict {
+    text-align: center;
+    background: transparent;
+    border: 2px solid skyblue;
+    padding: 1rem 3rem;
+    border-radius: 6rem;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 77%;
+}
+
+.predict:hover {
+    background: #90DEEE;
+    border: 2px solid #90DEEE;
+}

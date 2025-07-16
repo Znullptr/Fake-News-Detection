@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> News Detection System </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+<div class="title-container"><h2 class="title"> Fake news Detector </h2></div>
+    <div class="form-container">
+        <form action="{{ url_for('predict')}}" method="POST">
+            <h3>Titre</h3>
+            <input type="text" name="title" class="article-title" placeholder="Entrer le titre de votre article ici">
+            <h3>Text</h3>
+            <textarea name="text" class="article-text" placeholder="Entrer le contenu de votre article ici"></textarea>
+            <button type="submit" class="predict"> Predict </button>
+
+            <br>
+            <br>
+        </form>
+    </div>
+</body>
+</html>

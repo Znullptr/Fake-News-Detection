@@ -1,0 +1,21 @@
+.real{
+text-align: center;
+color: #D6372A;
+}
+.fake{
+text-align: center;
+color: #2FB5E8;
+}
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 90%;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2;
+}
