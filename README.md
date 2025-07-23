@@ -24,6 +24,7 @@ Fake news can manipulate the public for political, commercial, or other purposes
 
 ## Features
 
+- **Web Scraping:** Crawl news sites using BeautifulSoup in combination with Newspaper3k.
 - **News Classification:** Classifies articles based on features extracted from their text.
 - **Preprocessing Pipelines:** Includes filtering, tokenization, stop-word removal, and lemmatization.
 - **Machine Learning Models:** Trained with algorithms like:
@@ -62,5 +63,4 @@ Fake news can manipulate the public for political, commercial, or other purposes
 
 - **Tahar Jaafer**  
   - [LinkedIn Profile](https://linkedin.com/in/tahar-jaafer)  
-  - Developed during an internship at ITGate under the guidance of **Mme. Islem Melki**.
 
